@@ -21,7 +21,11 @@
  * THE SOFTWARE.
 */
 
-function Building(name, description, amount, coinCost, IDRCost, mCubeCost, kWhCost, workerCost, visitorCost, emptySpaceCost, specialCoinCost, coinProductionRate, IDRProductionRate, mCubeProductionRate, kWhProductionRate, workerProductionRate, visitorProductionRate, emptySpaceProductionRate, specialCoinProductionRate, actualCoinProductionRate, actualIDRProductionRate actualmCubeProductionRate, actualkWhProductionRate, actualWorkerProductionRate, actualVisitorProductionRate, actualEmptySpaceProductionRate, actualSpecialCoinProductionRate, requirements, unlocked){
+var buildings = [ // name, description, amount, coinCost, IDRCost, mCubeCost, kWhCost, workerCost, visitorCost, emptySpaceCost, specialCoinCost, coinProductionRate, IDRProductionRate, mCubeProductionRate, kWhProductionRate, workerProductionRate, visitorProductionRate, emptySpaceProductionRate, specialCoinProductionRate, actualCoinProductionRate, actualIDRProductionRate, actualmCubeProductionRate, actualkWhProductionRate, actualWorkerProductionRate, actualVisitorProductionRate, actualEmptySpaceProductionRate, actualSpecialCoinProductionRate, requirements, unlocked
+    
+];
+
+function Building(name, description, amount, coinCost, IDRCost, mCubeCost, kWhCost, workerCost, visitorCost, emptySpaceCost, specialCoinCost, coinProductionRate, IDRProductionRate, mCubeProductionRate, kWhProductionRate, workerProductionRate, visitorProductionRate, emptySpaceProductionRate, specialCoinProductionRate, actualCoinProductionRate, actualIDRProductionRate, actualmCubeProductionRate, actualkWhProductionRate, actualWorkerProductionRate, actualVisitorProductionRate, actualEmptySpaceProductionRate, actualSpecialCoinProductionRate, requirements, unlocked){
     this.name = name;
     this.description = description;
     this.amount = amount;
