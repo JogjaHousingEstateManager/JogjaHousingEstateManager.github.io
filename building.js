@@ -501,40 +501,39 @@ var buildings = [ // name, description, amount, coinCost, IDRCost, mCubeCost, kW
     // ADD MORE BUILDINGS HERE
 ];
 
-class Building{
-    constructor(name, description, amount, coinCost, IDRCost, mCubeCost, kWhCost, workerCost, visitorCost, emptySpaceCost, specialCoinCost, coinProductionRate, IDRProductionRate, mCubeProductionRate, kWhProductionRate, workerProductionRate, visitorProductionRate, emptySpaceProductionRate, specialCoinProductionRate, actualCoinProductionRate, actualIDRProductionRate, actualmCubeProductionRate, actualkWhProductionRate, actualWorkerProductionRate, actualVisitorProductionRate, actualEmptySpaceProductionRate, actualSpecialCoinProductionRate, requirements, unlocked){
-        this.name = name;
-        this.description = description;
-        this.amount = amount;
-        this.coinCost = coinCost;
-        this.IDRCost = IDRCost;
-        this.mCubeCost = mCubeCost;
-        this.kWhCost = kWhCost;
-        this.workerCost = workerCost;
-        this.visitorCost = visitorCost;
-        this.emptySpaceCost = emptySpaceCost;
-        this.specialCoinCost = specialCoinCost;
-        this.coinProductionRate = coinProductionRate;
-        this.IDRProductionRate = IDRProductionRate;
-        this.mCubeProductionRate = mCubeProductionRate;
-        this.kWhProductionRate = kWhProductionRate;
-        this.workerProductionRate = workerProductionRate;
-        this.visitorProductionRate = visitorProductionRate;
-        this.emptySpaceProductionRate = emptySpaceProductionRate;
-        this.specialCoinProductionRate = specialCoinProductionRate;
-        this.actualCoinProductionRate = actualCoinProductionRate;
-        this.actualIDRProductionRate = actualIDRProductionRate;
-        this.actualmCubeProductionRate = actualmCubeProductionRate;
-        this.actualkWhProductionRate = actualkWhProductionRate;
-        this.actualWorkerProductionRate = actualWorkerProductionRate;
-        this.actualVisitorProductionRate = actualVisitorProductionRate;
-        this.actualEmptySpaceProductionRate = actualEmptySpaceProductionRate;
-        this.actualSpecialCoinProductionRate = actualSpecialCoinProductionRate;
-        this.requirements = requirements;
-        this.unlocked = unlocked;
-    }
-    // MORE FUNCTIONS FOR BUILDING CLASS ARE TO BE ADDED
-}
+function Building(name, description, amount, coinCost, IDRCost, mCubeCost, kWhCost, workerCost, visitorCost, emptySpaceCost, specialCoinCost, coinProductionRate, IDRProductionRate, mCubeProductionRate, kWhProductionRate, workerProductionRate, visitorProductionRate, emptySpaceProductionRate, specialCoinProductionRate, actualCoinProductionRate, actualIDRProductionRate, actualmCubeProductionRate, actualkWhProductionRate, actualWorkerProductionRate, actualVisitorProductionRate, actualEmptySpaceProductionRate, actualSpecialCoinProductionRate, requirements, unlocked){
+    this.name = name;
+    this.description = description;
+    this.amount = amount;
+    this.coinCost = coinCost;
+    this.IDRCost = IDRCost;
+    this.mCubeCost = mCubeCost;
+    this.kWhCost = kWhCost;
+    this.workerCost = workerCost;
+    this.visitorCost = visitorCost;
+    this.emptySpaceCost = emptySpaceCost;
+    this.specialCoinCost = specialCoinCost;
+    this.coinProductionRate = coinProductionRate;
+    this.IDRProductionRate = IDRProductionRate;
+    this.mCubeProductionRate = mCubeProductionRate;
+    this.kWhProductionRate = kWhProductionRate;
+    this.workerProductionRate = workerProductionRate;
+    this.visitorProductionRate = visitorProductionRate;
+    this.emptySpaceProductionRate = emptySpaceProductionRate;
+    this.specialCoinProductionRate = specialCoinProductionRate;
+    this.actualCoinProductionRate = actualCoinProductionRate;
+    this.actualIDRProductionRate = actualIDRProductionRate;
+    this.actualmCubeProductionRate = actualmCubeProductionRate;
+    this.actualkWhProductionRate = actualkWhProductionRate;
+    this.actualWorkerProductionRate = actualWorkerProductionRate;
+    this.actualVisitorProductionRate = actualVisitorProductionRate;
+    this.actualEmptySpaceProductionRate = actualEmptySpaceProductionRate;
+    this.actualSpecialCoinProductionRate = actualSpecialCoinProductionRate;
+    this.requirements = requirements;
+    this.unlocked = unlocked;
+};
+
+// MORE FUNCTIONS FOR BUILDING CLASS ARE TO BE ADDED
 
 var building_html = "Below are the housing estates and special buildings owned <br></br><table>";
 building_html += "<tr><th>Name</th><th>Description</th><th>Amount</th><th>Costs</th><th>Actual Production Rates</th><th>Requirements</th><th>Is Unlocked?</th></tr>";
