@@ -533,7 +533,299 @@ function Building(name, description, amount, coinCost, IDRCost, mCubeCost, kWhCo
     this.unlocked = unlocked;
 };
 
-// MORE FUNCTIONS FOR BUILDING CLASS ARE TO BE ADDED
+Building.getName = function(){
+    return this.name;
+};
+
+Building.setName = function(name){
+    if (name !== null && name !== "" && typeof name === 'string'){
+        this.name = name;
+    };
+};
+
+Building.getDescription = function(){
+    return this.description;
+};
+
+Building.setDescription = function(description){
+    if (description !== null && description !== "" && typeof description === 'string'){
+        this.description = description;
+    };
+};
+
+Building.getAmount = function(){
+    return this.amount;
+};
+
+Building.setAmount = function(amount){
+    if (amount >= 0 && typeof amount === 'Decimal'){
+        this.amount = amount;
+    };
+};
+
+Building.getCoinCost = function(){
+    return this.coinCost;
+};
+
+Building.setCoinCost = function(coinCost){
+    if (coinCost >= 0 && typeof coinCost === 'Decimal'){
+        this.coinCost = coinCost;
+    };
+};
+
+Building.getIDRCost = function(){
+    return this.IDRCost;
+};
+
+Building.setIDRCost = function(IDRCost){
+    if (IDRCost >= 0 && typeof IDRCost === 'Decimal'){
+        this.IDRCost = IDRCost;
+    };
+};
+
+Building.getmCubeCost = function(){
+    return this.mCubeCost;
+};
+
+Building.setmCubeCost = function(mCubeCost){
+    if (mCubeCost >= 0 && typeof mCubeCost === 'Decimal'){
+        this.mCubeCost = mCubeCost;
+    };
+};
+
+Building.getkWhCost = function(){
+    return this.kWhCost;
+};
+
+Building.setkWhCost = function(kWhCost){
+    if (kWhCost >= 0 && typeof kWhCost === 'Decimal'){
+        this.kWhCost = kWhCost;
+    };
+};
+
+Building.getWorkerCost = function(){
+    return this.workerCost;
+};
+
+Building.setWorkerCost = function(workerCost){
+    if (workerCost >= 0 && typeof workerCost === 'Decimal'){
+        this.workerCost = workerCost;
+    };
+};
+
+Building.getVisitorCost = function(){
+    return this.visitorCost;
+};
+
+Building.setVisitorCost = function(visitorCost){
+    if (visitorCost >= 0 && typeof visitorCost === 'Decimal'){
+        this.visitorCost = visitorCost;
+    };
+};
+
+Building.getEmptySpaceCost = function(){
+    return this.emptySpaceCost;
+};
+
+Building.setEmptySpaceCost = function(emptySpaceCost){
+    if (emptySpaceCost >= 0 && typeof emptySpaceCost === 'Decimal'){
+        this.emptySpaceCost = emptySpaceCost;
+    };
+};
+
+Building.getSpecialCoinCost = function(){
+    return this.specialCoinCost;
+};
+
+Building.setSpecialCoinCost = function(specialCoinCost){
+    if (specialCoinCost >= 0 && typeof specialCoinCost === 'Decimal'){
+        this.specialCoinCost = specialCoinCost;
+    };
+};
+
+Building.getCoinProductionRate = function(){
+    return this.coinProductionRate;
+};
+
+Building.setCoinProductionRate = function(coinProductionRate){
+    if (coinProductionRate >= 0 && typeof coinProductionRate === 'Decimal'){
+        this.coinProductionRate = coinProductionRate;
+    };
+};
+
+Building.getIDRProductionRate = function(){
+    return this.IDRProductionRate;
+};
+
+Building.setIDRProductionRate = function(IDRProductionRate){
+    if (IDRProductionRate >= 0 && typeof IDRProductionRate === 'Decimal'){
+        this.IDRProductionRate = IDRProductionRate;
+    };
+};
+
+Building.getmCubeProductionRate = function(){
+    return this.mCubeProductionRate;
+};
+
+Building.setmCubeProductionRate = function(mCubeProductionRate){
+    if (mCubeProductionRate >= 0 && typeof mCubeProductionRate === 'Decimal'){
+        this.mCubeProductionRate = mCubeProductionRate;
+    };
+};
+
+Building.getkWhProductionRate = function(){
+    return this.kWhProductionRate;
+};
+
+Building.setkWhProductionRate = function(kWhProductionRate){
+    if (kWhProductionRate >= 0 && typeof kWhProductionRate === 'Decimal'){
+        this.kWhProductionRate = kWhProductionRate;
+    };
+};
+
+Building.getWorkerProductionRate = function(){
+    return this.workerProductionRate;
+};
+
+Building.setWorkerProductionRate = function(workerProductionRate){
+    if (workerProductionRate >= 0 && typeof workerProductionRate === 'Decimal'){
+        this.workerProductionRate = workerProductionRate;
+    };
+};
+
+Building.getVisitorProductionRate = function(){
+    return this.visitorProductionRate;
+};
+
+Building.setVisitorProductionRate = function(visitorProductionRate){
+    if (visitorProductionRate >= 0 && typeof visitorProductionRate === 'Decimal'){
+        this.visitorProductionRate = visitorProductionRate;
+    };
+};
+
+Building.getEmptySpaceProductionRate = function(){
+    return this.emptySpaceProductionRate;
+};
+
+Building.setEmptySpaceProductionRate = function(emptySpaceProductionRate){
+    if (emptySpaceProductionRate >= 0 && typeof emptySpaceProductionRate === 'Decimal'){
+        this.emptySpaceProductionRate = emptySpaceProductionRate;
+    };
+};
+
+Building.getSpecialCoinProductionRate = function(){
+    return this.specialCoinProductionRate;
+};
+
+Building.setSpecialCoinProductionRate = function(specialCoinProductionRate){
+    if (specialCoinProductionRate >= 0 && typeof specialCoinProductionRate === 'Decimal'){
+        this.specialCoinProductionRate = specialCoinProductionRate;
+    };
+};
+
+Building.getActualCoinProductionRate = function(){
+    return this.actualCoinProductionRate;
+};
+
+Building.setActualCoinProductionRate = function(actualCoinProductionRate){
+    if (actualCoinProductionRate >= 0 && typeof actualCoinProductionRate === 'Decimal'){
+        this.actualCoinProductionRate = actualCoinProductionRate;
+    };
+};
+
+Building.getActualIDRProductionRate = function(){
+    return this.actualIDRProductionRate;
+};
+
+Building.setActualIDRProductionRate = function(actualIDRProductionRate){
+    if (actualIDRProductionRate >= 0 && typeof actualIDRProductionRate === 'Decimal'){
+        this.actualIDRProductionRate = actualIDRProductionRate;
+    };
+};
+
+Building.getActualmCubeProductionRate = function(){
+    return this.actualmCubeProductionRate;
+};
+
+Building.setActualmCubeProductionRate = function(actualmCubeProductionRate){
+    if (actualmCubeProductionRate >= 0 && typeof actualmCubeProductionRate === 'Decimal'){
+        this.actualmCubeProductionRate = actualmCubeProductionRate;
+    };
+};
+
+Building.getActualkWhProductionRate = function(){
+    return this.actualkWhProductionRate;
+};
+
+Building.setActualkWhProductionRate = function(actualkWhProductionRate){
+    if (actualkWhProductionRate >= 0 && typeof actualkWhProductionRate === 'Decimal'){
+        this.actualkWhProductionRate = actualkWhProductionRate;
+    };
+};
+
+Building.getActualWorkerProductionRate = function(){
+    return this.actualWorkerProductionRate;
+};
+
+Building.setActualWorkerProductionRate = function(actualWorkerProductionRate){
+    if (actualWorkerProductionRate >= 0 && typeof actualWorkerProductionRate === 'Decimal'){
+        this.actualWorkerProductionRate = actualWorkerProductionRate;
+    };
+};
+
+Building.getActualVisitorProductionRate = function(){
+    return this.actualVisitorProductionRate;
+};
+
+Building.setActualVisitorProductionRate = function(actualVisitorProductionRate){
+    if (actualVisitorProductionRate >= 0 && typeof actualVisitorProductionRate === 'Decimal'){
+        this.actualVisitorProductionRate = actualVisitorProductionRate;
+    };
+};
+
+Building.getActualEmptySpaceProductionRate = function(){
+    return this.actualEmptySpaceProductionRate;
+};
+
+Building.setActualEmptySpaceProductionRate = function(actualEmptySpaceProductionRate){
+    if (actualEmptySpaceProductionRate >= 0 && typeof actualEmptySpaceProductionRate === 'Decimal'){
+        this.actualEmptySpaceProductionRate = actualEmptySpaceProductionRate;
+    };
+};
+
+Building.getActualSpecialCoinProductionRate = function(){
+    return this.actualSpecialCoinProductionRate;
+};
+
+Building.setActualSpecialCoinProductionRate = function(actualSpecialCoinProductionRate){
+    if (actualSpecialCoinProductionRate >= 0 && typeof actualSpecialCoinProductionRate === 'Decimal'){
+        this.actualSpecialCoinProductionRate = actualSpecialCoinProductionRate;
+    };
+};
+
+Building.getRequirements = function(){
+    return this.requirements;
+};
+
+Building.setRequirements = function(requirements){
+    if ((requirements !== "" && typeof requirements === 'boolean') || requirements === null){
+        this.requirements = requirements;
+    };
+};
+
+Building.getUnlocked = function(){
+    return this.unlocked;
+};
+
+Building.setUnlocked = function(unlocked){
+    if (unlocked !== null && unlocked !== "" && typeof unlocked === 'boolean'){
+        this.unlocked = unlocked;
+    };
+};
+
+Building.unlock = function(){
+    this.setUnlocked(true);
+};
 
 var building_html = "Below are the housing estates and special buildings owned <br></br><table>";
 building_html += "<tr><th>Name</th><th>Description</th><th>Amount</th><th>Costs</th><th>Actual Production Rates</th><th>Requirements</th><th>Is Unlocked?</th></tr>";
